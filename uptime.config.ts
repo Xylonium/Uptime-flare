@@ -98,9 +98,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://nezha.xuanzi.ggff.net',
-      tooltip: 'My server status',
-      statusPageLink: 'https://nezha.xuanzi.ggff.net',
+      target: 'https://nezha.xons.us.kg',
+      tooltip: 'My nezha server status',
+      statusPageLink: 'https://nezha.xons.us.kg',
       timeout: 10000,
     },
     {
@@ -135,6 +135,28 @@ const workerConfig = {
       target: 'https://pan.xons.us.kg/',
       tooltip: 'My cloud server monitor',
       statusPageLink: 'https://pan.xons.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'sun-panel',
+      name: 'Sun-Panel',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://sun-panel.xons.us.kg/',
+      tooltip: 'My sun server monitor',
+      statusPageLink: 'https://sun-panel.xons.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'webssh',
+      name: 'WebSSH',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://ssh.xons.us.kg/',
+      tooltip: 'My webssh server monitor',
+      statusPageLink: 'https://ssh.xons.us.kg/',
       timeout: 10000,
     },
     {
@@ -194,7 +216,7 @@ const workerConfig = {
     },
     {
       id: 'image',
-      name: 'image',
+      name: 'Image',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -205,7 +227,7 @@ const workerConfig = {
     },
     {
       id: 'im',
-      name: 'im',
+      name: 'Im-h',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -331,7 +353,7 @@ const workerConfig = {
   notification: {
     // [Optional] apprise API server URL
     // if not specified, no notification will be sent
-    appriseApiServer: "https://testapprise-lyc8503s-projects.vercel.app/notify",
+    appriseApiServer: "https://apprisevercel-fawn.vercel.app/notify",
     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     // if not specified, no notification will be sent
     recipientUrl: "tgram://7800260212:AAF7KxobR0YHvhAcw-D3z9cdI74mpXizCfs/7111074843",
