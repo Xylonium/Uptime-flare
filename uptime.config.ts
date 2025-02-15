@@ -3,9 +3,9 @@ const pageConfig = {
   title: "Xylonstar's Status Page",  // lyc8503's Status Page
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/xylonify', label: 'GitHub' },
-    { link: 'https://blog.xylonstar.us.kg', label: 'Blog' },
-    { link: 'mailto:xylonstar@outlook.com', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/Xylonstar', label: 'GitHub' },
+    { link: 'https://blog.xonsss.us.kg', label: 'Blog' },
+    { link: 'mailto:Xylonstar@outlook.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -54,9 +54,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://xylonstar.us.kg/',
+      target: 'https://Xylonstar.us.kg/',
       tooltip: 'My home server monitor',
-      statusPageLink: 'https://xylonstar.us.kg/',
+      statusPageLink: 'https://Xylonstar.us.kg/',
       timeout: 10000,
     },
     {
@@ -65,9 +65,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://blog.xylonstar.us.kg/',
+      target: 'https://blog.xonsss.us.kg/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://blog.xylonstar.us.kg/',
+      statusPageLink: 'https://blog.xonsss.us.kg/',
       timeout: 10000,
     },
     {
@@ -76,9 +76,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://vercel.xylonstar.us.kg/',
+      target: 'https://vercel.xonsss.us.kg/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://vercel.xylonstar.us.kg',
+      statusPageLink: 'https://vercel.xonsss.us.kg',
       timeout: 10000,
     },
     {
@@ -87,9 +87,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://netlify.xylonstar.us.kg/',
+      target: 'https://netlify.xonsss.us.kg/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://netlify.xylonstar.us.kg',
+      statusPageLink: 'https://netlify.xonsss.us.kg',
       timeout: 10000,
     },
     {
@@ -176,9 +176,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://gpt.xylonstar.us.kg/',
+      target: 'https://gpt.xonsss.us.kg/',
       tooltip: 'My gpt server monitor',
-      statusPageLink: 'https://gpt.xylonstar.us.kg/',
+      statusPageLink: 'https://gpt.xonsss.us.kg/',
       timeout: 10000,
     },
     {
@@ -187,9 +187,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://music.xylonstar.us.kg/',
+      target: 'https://music.xonsss.us.kg/',
       tooltip: 'My music server monitor',
-      statusPageLink: 'https://music.xylonstar.us.kg/',
+      statusPageLink: 'https://music.xonsss.us.kg/',
       timeout: 10000,
     },
     {
@@ -198,9 +198,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://tv.xylonstar.us.kg/',
+      target: 'https://tv.xonsss.us.kg/',
       tooltip: 'My tv server monitor',
-      statusPageLink: 'https://tv.xylonstar.us.kg/',
+      statusPageLink: 'https://tv.xonsss.us.kg/',
       timeout: 10000,
     },
     {
@@ -209,9 +209,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://img.xylonstar.us.kg',
+      target: 'https://img.xonsss.us.kg',
       tooltip: 'My img server monitor',
-      statusPageLink: 'https://img.xylonstar.us.kg/',
+      statusPageLink: 'https://img.xonsss.us.kg/',
       timeout: 10000,
     },
     {
