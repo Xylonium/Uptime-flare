@@ -203,6 +203,30 @@ const workerConfig = {
       statusPageLink: 'https://tv.xonsss.us.kg/',
       timeout: 10000,
     },
+    ,
+    {
+      id: 'tv-site',
+      name: 'TV-Site',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xon.ip-ddns.com/',
+      tooltip: 'My tv-site server monitor',
+      statusPageLink: 'https://xon.ip-ddns.com/',
+      timeout: 10000,
+    },
+    ,
+    {
+      id: 'xiaoyu',
+      name: 'Rui',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'http://xuanzi.ggff.net/',
+      tooltip: 'My proxy server monitor',
+      statusPageLink: 'http://xuanzi.ggff.net/',
+      timeout: 10000,
+    },
     {
       id: 'img',
       name: 'ImgBed',
