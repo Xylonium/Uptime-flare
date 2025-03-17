@@ -3,9 +3,9 @@ const pageConfig = {
   title: "Xylonstar's Status Page",  // lyc8503's Status Page
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/xylonify', label: 'GitHub' },
-    { link: 'https://blog.xylonstar.us.kg', label: 'Blog' },
-    { link: 'mailto:xylonstar@outlook.com', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/Xylonstar', label: 'GitHub' },
+    { link: 'https://blog.xons.me', label: 'Blog' },
+    { link: 'mailto:Xylonstar@outlook.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -54,9 +54,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://xylonstar.us.kg/',
+      target: 'https://xons.me/',
       tooltip: 'My home server monitor',
-      statusPageLink: 'https://xylonstar.us.kg/',
+      statusPageLink: 'https://xons.me/',
       timeout: 10000,
     },
     {
@@ -65,9 +65,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://blog.xylonstar.us.kg/',
+      target: 'https://blog.xons.me/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://blog.xylonstar.us.kg/',
+      statusPageLink: 'https://blog.xons.me/',
       timeout: 10000,
     },
     {
@@ -76,9 +76,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://vercel.xylonstar.us.kg/',
+      target: 'https://vercel.xons.me/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://vercel.xylonstar.us.kg',
+      statusPageLink: 'https://vercel.xons.me',
       timeout: 10000,
     },
     {
@@ -87,9 +87,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://netlify.xylonstar.us.kg/',
+      target: 'https://netlify.xons.me/',
       tooltip: 'My blog server monitor',
-      statusPageLink: 'https://netlify.xylonstar.us.kg',
+      statusPageLink: 'https://netlify.xons.me',
       timeout: 10000,
     },
     {
@@ -109,9 +109,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://docker.xons.us.kg/',
+      target: 'https://docker.xon.dedyn.io/',
       tooltip: 'My dockerhub server monitor',
-      statusPageLink: 'https://docker.xons.us.kg/',
+      statusPageLink: 'https://docker.xon.dedyn.io/',
       timeout: 10000,
     },
     {
@@ -120,9 +120,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://ghp.xons.us.kg/',
+      target: 'https://ghp.xons.me/',
       tooltip: 'My ghproxy server monitor',
-      statusPageLink: 'https://ghp.xons.us.kg/',
+      statusPageLink: 'https://ghp.xons.me/',
       timeout: 10000,
 
     },
@@ -165,9 +165,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://nc.xons.us.kg/',
+      target: 'https://nc.xons.me/',
       tooltip: 'My gemini server monitor',
-      statusPageLink: 'https://nc.xons.us.kg/',
+      statusPageLink: 'https://nc.xons.me/',
       timeout: 10000,
     },
     {
@@ -176,9 +176,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://gpt.xylonstar.us.kg/',
+      target: 'https://gpt.xons.me/',
       tooltip: 'My gpt server monitor',
-      statusPageLink: 'https://gpt.xylonstar.us.kg/',
+      statusPageLink: 'https://gpt.xons.me/',
       timeout: 10000,
     },
     {
@@ -187,9 +187,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://music.xylonstar.us.kg/',
+      target: 'https://music.xons.me/',
       tooltip: 'My music server monitor',
-      statusPageLink: 'https://music.xylonstar.us.kg/',
+      statusPageLink: 'https://music.xons.me/',
       timeout: 10000,
     },
     {
@@ -198,9 +198,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://tv.xylonstar.us.kg/',
+      target: 'https://tv.xons.me/',
       tooltip: 'My tv server monitor',
-      statusPageLink: 'https://tv.xylonstar.us.kg/',
+      statusPageLink: 'https://tv.xons.me/',
       timeout: 10000,
     },
     {
@@ -209,9 +209,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://img.xylonstar.us.kg',
+      target: 'https://img.xons.me',
       tooltip: 'My img server monitor',
-      statusPageLink: 'https://img.xylonstar.us.kg/',
+      statusPageLink: 'https://img.xons.me/',
       timeout: 10000,
     },
     {
