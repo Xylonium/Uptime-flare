@@ -98,9 +98,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://nezha.xons.us.kg',
+      target: 'https://nezha.xons.dpdns.org',
       tooltip: 'My nezha server status',
-      statusPageLink: 'https://nezha.xons.us.kg',
+      statusPageLink: 'https://nezha.xons.dpdns.org',
       timeout: 10000,
     },
     {
@@ -132,9 +132,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://pan.xons.us.kg/',
+      target: 'https://pan.xons.dpdns.org/',
       tooltip: 'My cloud server monitor',
-      statusPageLink: 'https://pan.xons.us.kg/',
+      statusPageLink: 'https://pan.xons.dpdns.org/',
       timeout: 10000,
     },
     {
@@ -143,9 +143,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://sun-panel.xons.us.kg/',
+      target: 'https://sun-panel.xons.dpdns.org/',
       tooltip: 'My sun server monitor',
-      statusPageLink: 'https://sun-panel.xons.us.kg/',
+      statusPageLink: 'https://sun-panel.xons.dpdns.org/',
       timeout: 10000,
     },
     {
@@ -154,9 +154,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://ssh.xons.us.kg/',
+      target: 'https://ssh.xons.dpdns.org/',
       tooltip: 'My webssh server monitor',
-      statusPageLink: 'https://ssh.xons.us.kg/',
+      statusPageLink: 'https://ssh.xons.dpdns.org/',
       timeout: 10000,
     },
     {
@@ -242,9 +242,9 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://br.xons.us.kg/',
+      target: 'https://br.xons.dpdns.org/',
       tooltip: 'My br server monitor',
-      statusPageLink: 'https://br.xons.us.kg/',
+      statusPageLink: 'https://br.xons.dpdns.org/',
       timeout: 10000,
     },
     {
@@ -275,7 +275,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://ct.xna.us.kg/',
+      target: 'https://ct.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -286,7 +286,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://cv.xna.us.kg/',
+      target: 'https://cv.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://edt.xylonify.us.kg//',
       timeout: 10000,
@@ -297,7 +297,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://sub.xna.us.kg/',
+      target: 'https://sub.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -308,7 +308,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://cfnat.xna.us.kg/',
+      target: 'https://cfnat.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -319,7 +319,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://brave.xnstar.us.kg/',
+      target: 'https://brave.xnstar.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -330,7 +330,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://3k.xnstar.us.kg',
+      target: 'https://3k.xnstar.dpdns.org',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -341,7 +341,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://hqz.xna.us.kg',
+      target: 'https://hqz.xna.dpdns.org',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
