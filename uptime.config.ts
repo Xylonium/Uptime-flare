@@ -92,17 +92,17 @@ const workerConfig = {
       statusPageLink: 'https://netlify.xons.me',
       timeout: 10000,
     },
-    {
-      id: 'nezha',
-      name: 'NeZha',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://nezha.xons.dpdns.org',
-      tooltip: 'My nezha server status',
-      statusPageLink: 'https://nezha.xons.dpdns.org',
-      timeout: 10000,
-    },
+    // {
+    //   id: 'nezha',
+    //   name: 'NeZha',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://nezha.xons.dpdns.org',
+    //   tooltip: 'My nezha server status',
+    //   statusPageLink: 'https://nezha.xons.dpdns.org',
+    //   timeout: 10000,
+    // },
     {
       id: 'docker-img',
       name: 'DockerHub',
@@ -126,39 +126,39 @@ const workerConfig = {
       timeout: 10000,
 
     },
-    {
-      id: 'cloud',
-      name: 'Cloud',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://pan.xons.dpdns.org/',
-      tooltip: 'My cloud server monitor',
-      statusPageLink: 'https://pan.xons.dpdns.org/',
-      timeout: 10000,
-    },
-    {
-      id: 'sun-panel',
-      name: 'Sun-Panel',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://sun-panel.xons.dpdns.org/',
-      tooltip: 'My sun server monitor',
-      statusPageLink: 'https://sun-panel.xons.dpdns.org/',
-      timeout: 10000,
-    },
-    {
-      id: 'webssh',
-      name: 'WebSSH',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://ssh.xons.dpdns.org/',
-      tooltip: 'My webssh server monitor',
-      statusPageLink: 'https://ssh.xons.dpdns.org/',
-      timeout: 10000,
-    },
+    // {
+    //   id: 'cloud',
+    //   name: 'Cloud',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://pan.xons.dpdns.org/',
+    //   tooltip: 'My cloud server monitor',
+    //   statusPageLink: 'https://pan.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
+    // {
+    //   id: 'sun-panel',
+    //   name: 'Sun-Panel',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://sun-panel.xons.dpdns.org/',
+    //   tooltip: 'My sun server monitor',
+    //   statusPageLink: 'https://sun-panel.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
+    // {
+    //   id: 'webssh',
+    //   name: 'WebSSH',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://ssh.xons.dpdns.org/',
+    //   tooltip: 'My webssh server monitor',
+    //   statusPageLink: 'https://ssh.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
     {
       id: 'gemini',
       name: 'Gemini',
@@ -247,17 +247,17 @@ const workerConfig = {
       statusPageLink: 'https://br.xons.dpdns.org/',
       timeout: 10000,
     },
-    {
-      id: 'bar',
-      name: 'Bar',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://br.xuanzi.ggff.net/',
-      tooltip: 'My bar server monitor',
-      statusPageLink: 'https://br.xuanzi.ggff.net/',
-      timeout: 10000,
-    },
+    // {
+    //   id: 'bar',
+    //   name: 'Bar',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://br.xuanzi.ggff.net/',
+    //   tooltip: 'My bar server monitor',
+    //   statusPageLink: 'https://br.xuanzi.ggff.net/',
+    //   timeout: 10000,
+    // },
     {
       id: 'dev',
       name: 'dev',
