@@ -60,6 +60,17 @@ const workerConfig = {
       timeout: 10000,
     },
     {
+      id: 'homepage',
+      name: 'Homepage',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://nav.xons.me/',
+      tooltip: 'My homepage server monitor',
+      statusPageLink: 'https://nav.xons.me/',
+      timeout: 10000,
+    },
+    {
       id: 'cloudflare-blog',
       name: 'Cloudflare CDN',
       // `method` should be `TCP_PING` for tcp monitors
@@ -126,28 +137,28 @@ const workerConfig = {
       timeout: 10000,
 
     },
-    // {
-    //   id: 'cloud',
-    //   name: 'Cloud',
-    //   // `method` should be `TCP_PING` for tcp monitors
-    //   method: 'GET',
-    //   // `target` should be `host:port` for tcp monitors
-    //   target: 'https://pan.xons.dpdns.org/',
-    //   tooltip: 'My cloud server monitor',
-    //   statusPageLink: 'https://pan.xons.dpdns.org/',
-    //   timeout: 10000,
-    // },
-    // {
-    //   id: 'sun-panel',
-    //   name: 'Sun-Panel',
-    //   // `method` should be `TCP_PING` for tcp monitors
-    //   method: 'GET',
-    //   // `target` should be `host:port` for tcp monitors
-    //   target: 'https://sun-panel.xons.dpdns.org/',
-    //   tooltip: 'My sun server monitor',
-    //   statusPageLink: 'https://sun-panel.xons.dpdns.org/',
-    //   timeout: 10000,
-    // },
+    {
+      id: 'cloud',
+      name: 'Cloud',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://pan.xons.dpdns.org/',
+      tooltip: 'My cloud server monitor',
+      statusPageLink: 'https://pan.xons.dpdns.org/',
+      timeout: 10000,
+    },
+    {
+      id: 'note',
+      name: 'Enclosed',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://note.xons.me/',
+      tooltip: 'My enclosed server monitor',
+      statusPageLink: 'https://note.xons.me/',
+      timeout: 10000,
+    },
     // {
     //   id: 'webssh',
     //   name: 'WebSSH',
@@ -193,7 +204,7 @@ const workerConfig = {
       timeout: 10000,
     },
     {
-      id: 'tv',
+      id: 'tvbox',
       name: 'TVBox',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
@@ -201,6 +212,17 @@ const workerConfig = {
       target: 'https://tvbox.xons.me/',
       tooltip: 'My tv server monitor',
       statusPageLink: 'https://tvbox.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'libre',
+      name: 'Libre TV',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://libre.xons.me/',
+      tooltip: 'My libre server monitor',
+      statusPageLink: 'https://libre.xons.me/',
       timeout: 10000,
     },
     {
@@ -225,39 +247,39 @@ const workerConfig = {
       statusPageLink: 'https://img.xylonstar.ggff.net/',
       timeout: 10000,
     },
-    {
-      id: 'im',
-      name: 'Im-h',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://im.xylonstar.ggff.net/',
-      tooltip: 'My im server monitor',
-      statusPageLink: 'https://im.xylonstar.ggff.net/',
-      timeout: 10000,
-    },
-    {
-      id: 'br',
-      name: 'Br',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://br.xons.dpdns.org/',
-      tooltip: 'My br server monitor',
-      statusPageLink: 'https://br.xons.dpdns.org/',
-      timeout: 10000,
-    },
     // {
-    //   id: 'bar',
-    //   name: 'Bar',
+    //   id: 'im',
+    //   name: 'Im-h',
     //   // `method` should be `TCP_PING` for tcp monitors
     //   method: 'GET',
     //   // `target` should be `host:port` for tcp monitors
-    //   target: 'https://br.xuanzi.ggff.net/',
-    //   tooltip: 'My bar server monitor',
-    //   statusPageLink: 'https://br.xuanzi.ggff.net/',
+    //   target: 'https://im.xylonstar.ggff.net/',
+    //   tooltip: 'My im server monitor',
+    //   statusPageLink: 'https://im.xylonstar.ggff.net/',
     //   timeout: 10000,
     // },
+    // {
+    //   id: 'br',
+    //   name: 'Br',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://br.xons.dpdns.org/',
+    //   tooltip: 'My br server monitor',
+    //   statusPageLink: 'https://br.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
+    {
+      id: 'about',
+      name: 'About',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://about.xons.me/',
+      tooltip: 'My about server monitor',
+      statusPageLink: 'https://about.xons.me/',
+      timeout: 10000,
+    },
     {
       id: 'dev',
       name: 'dev',
