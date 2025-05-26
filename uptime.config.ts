@@ -2,19 +2,19 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "Xylonstar's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/Xylonstar', label: 'GitHub' },
+    { link: 'https://blog.xons.me/', label: 'Blog' },
+    { link: 'mailto:Xylonstar@outlook.com', label: 'Email Me', highlight: true },
   ],
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🌐 Public': ['home','homepage','cloudflare-blog','vercel-blog','netlify-blog','docker-img','pintree','github-proxy','cloud','note','lobechat','nextchat','music','tvbox','libre','img','image','about'],
+    '🔐 Private': ['sub','bpb','epe','edt','cfnat','yg','3K','hq'],
   },
 }
 
@@ -25,64 +25,373 @@ const workerConfig: WorkerConfig = {
   // passwordProtection: 'username:password',
   // Define all your monitors here
   monitors: [
-    // Example HTTP Monitor
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
-      // `name` is used at status page and callback message
-      name: 'My API Monitor',
-      // `method` should be a valid HTTP Method
-      method: 'POST',
-      // `target` is a valid URL
-      target: 'https://example.com',
-      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
-      // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
-      hideLatencyChart: false,
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'success',
-      // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
-      responseForbiddenKeyword: 'bad gateway',
-      // [OPTIONAL] if specified, will call the check proxy to check the monitor, mainly for geo-specific checks
-      // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Check-proxy-setup before setting this value
-      // currently supports `worker://` and `http(s)://` proxies
-      checkProxy: 'https://xxx.example.com OR worker://weur',
-      // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
-      checkProxyFallback: true,
-    },
+    // // Example HTTP Monitor
+    // {
+    //   // `id` should be unique, history will be kept if the `id` remains constant
+    //   id: 'foo_monitor',
+    //   // `name` is used at status page and callback message
+    //   name: 'My API Monitor',
+    //   // `method` should be a valid HTTP Method
+    //   method: 'POST',
+    //   // `target` is a valid URL
+    //   target: 'https://example.com',
+    //   // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+    //   tooltip: 'This is a tooltip for this monitor',
+    //   // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+    //   statusPageLink: 'https://example.com',
+    //   // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
+    //   hideLatencyChart: false,
+    //   // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+    //   expectedCodes: [200],
+    //   // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+    //   timeout: 10000,
+    //   // [OPTIONAL] headers to be sent
+    //   headers: {
+    //     'User-Agent': 'Uptimeflare',
+    //     Authorization: 'Bearer YOUR_TOKEN_HERE',
+    //   },
+    //   // [OPTIONAL] body to be sent
+    //   body: 'Hello, world!',
+    //   // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
+    //   responseKeyword: 'success',
+    //   // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
+    //   responseForbiddenKeyword: 'bad gateway',
+    //   // [OPTIONAL] if specified, will call the check proxy to check the monitor, mainly for geo-specific checks
+    //   // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Check-proxy-setup before setting this value
+    //   // currently supports `worker://` and `http(s)://` proxies
+    //   checkProxy: 'https://xxx.example.com OR worker://weur',
+    //   // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
+    //   checkProxyFallback: true,
+    // },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'home',
+      name: 'Home',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
+      target: 'https://xons.me/',
+      tooltip: 'My home server monitor',
+      statusPageLink: 'https://xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'homepage',
+      name: 'Homepage',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://home.xons.me/',
+      tooltip: 'My homepage server monitor',
+      statusPageLink: 'https://home.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'cloudflare-blog',
+      name: 'Cloudflare CDN',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://blog.xons.me/',
+      tooltip: 'My blog server monitor',
+      statusPageLink: 'https://blog.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'vercel-blog',
+      name: 'Vercel CDN',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://vercel.xons.me/',
+      tooltip: 'My blog server monitor',
+      statusPageLink: 'https://vercel.xons.me',
+      timeout: 10000,
+    },
+    {
+      id: 'netlify-blog',
+      name: 'Netlify CDN',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://netlify.xons.me/',
+      tooltip: 'My blog server monitor',
+      statusPageLink: 'https://netlify.xons.me',
+      timeout: 10000,
+    },
+    {
+      id: 'pintree',
+      name: 'Bookmark',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://pintree.xons.me/',
+      tooltip: 'My bookmark server status',
+      statusPageLink: 'https://pintree.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'docker-img',
+      name: 'DockerHub',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://docker.xon.dedyn.io/',
+      tooltip: 'My dockerhub server monitor',
+      statusPageLink: 'https://docker.xon.dedyn.io/',
+      timeout: 10000,
+    },
+    {
+      id: 'github-proxy',
+      name: 'GhProxy',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://ghp.xons.me/',
+      tooltip: 'My ghproxy server monitor',
+      statusPageLink: 'https://ghp.xons.me/',
+      timeout: 10000,
+
+    },
+    {
+      id: 'cloud',
+      name: 'Cloud',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://pan.xons.dpdns.org/',
+      tooltip: 'My cloud server monitor',
+      statusPageLink: 'https://pan.xons.dpdns.org/',
+      timeout: 10000,
+    },
+    {
+      id: 'note',
+      name: 'Enclosed',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://note.xons.me/',
+      tooltip: 'My enclosed server monitor',
+      statusPageLink: 'https://note.xons.me/',
+      timeout: 10000,
+    },
+    // {
+    //   id: 'webssh',
+    //   name: 'WebSSH',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://ssh.xons.dpdns.org/',
+    //   tooltip: 'My webssh server monitor',
+    //   statusPageLink: 'https://ssh.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
+    {
+      id: 'lobechat',
+      name: 'LobeChat',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://lobe.xons.me/',
+      tooltip: 'My gemini server monitor',
+      statusPageLink: 'https://lobe.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'nextchat',
+      name: 'NextChat',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://gpt.xons.me/',
+      tooltip: 'My gpt server monitor',
+      statusPageLink: 'https://gpt.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'music',
+      name: 'Music',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://music.xons.me/',
+      tooltip: 'My music server monitor',
+      statusPageLink: 'https://music.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'tvbox',
+      name: 'TVBox',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://tvbox.xons.me/',
+      tooltip: 'My tv server monitor',
+      statusPageLink: 'https://tvbox.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'libre',
+      name: 'Libre TV',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://libre.xons.me/',
+      tooltip: 'My libre server monitor',
+      statusPageLink: 'https://libre.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'img',
+      name: 'ImgBed',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://img.xons.me',
+      tooltip: 'My img server monitor',
+      statusPageLink: 'https://img.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'image',
+      name: 'Image',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://img.xylonstar.ggff.net/',
+      tooltip: 'My img server monitor',
+      statusPageLink: 'https://img.xylonstar.ggff.net/',
+      timeout: 10000,
+    },
+    // {
+    //   id: 'im',
+    //   name: 'Im-h',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://im.xylonstar.ggff.net/',
+    //   tooltip: 'My im server monitor',
+    //   statusPageLink: 'https://im.xylonstar.ggff.net/',
+    //   timeout: 10000,
+    // },
+    // {
+    //   id: 'br',
+    //   name: 'Br',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://br.xons.dpdns.org/',
+    //   tooltip: 'My br server monitor',
+    //   statusPageLink: 'https://br.xons.dpdns.org/',
+    //   timeout: 10000,
+    // },
+    {
+      id: 'about',
+      name: 'About',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://about.xons.me/',
+      tooltip: 'My about server monitor',
+      statusPageLink: 'https://about.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'bpb',
+      name: 'Bpb',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://hans.xna.dpdns.org/',
+      tooltip: 'My bpbpanel server monitor',
+      statusPageLink: 'https://hans.xna.dpdns.org/',
+      timeout: 10000,
+    },
+    {
+      id: 'epe',
+      name: 'epe',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://ct.xna.dpdns.org/',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'edt',
+      name: 'edt',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://cv.xna.dpdns.org/',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://edt.xylonify.us.kg//',
+      timeout: 10000,
+    },
+    {
+      id: 'sub',
+      name: 'Sub',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://sub.xna.dpdns.org/',
+      tooltip: 'My proxy server monitor',
+      statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'cfnat',
+      name: 'Cfnat',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://cfnat.xna.dpdns.org/',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'yg',
+      name: 'Yg',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://brave.xnstar.dpdns.org/',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: '3K',
+      name: '3K',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://3k.xnstar.dpdns.org',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'hq',
+      name: 'Hq',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://hqz.xna.dpdns.org',
+      tooltip: 'My proxy server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
     },
   ],
   notification: {
     // [Optional] apprise API server URL
     // if not specified, no notification will be sent
-    appriseApiServer: 'https://apprise.example.com/notify',
+    appriseApiServer: 'https://apprisevercel-fawn.vercel.app/notify',
     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     // if not specified, no notification will be sent
-    recipientUrl: 'tgram://bottoken/ChatID',
+    recipientUrl: 'tgram://7800260212:AAF7KxobR0YHvhAcw-D3z9cdI74mpXizCfs/7111074843',
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
     timeZone: 'Asia/Shanghai',
     // [Optional] grace period in minutes before sending a notification
