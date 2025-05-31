@@ -13,8 +13,11 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['home','homepage','cloudflare-blog','vercel-blog','netlify-blog','docker-img','pintree','github-proxy','cloud','note','lobechat','nextchat','music','tvbox','libre','img','image','about'],
-    '🔐 Private': ['sub','bpb','epe','edt','cfnat','yg','3K','hq'],
+    '🌐 Public': ['home','homepage','cloudflare-blog','vercel-blog','netlify-blog'],
+    '🔐 Private': ['lobechat','nextchat','cloud','img','image','memos','note','github-proxy','docker-img','pintree','hot','about'],
+    '🎞️ Media': ['music','sp','libre','libre-cf','libre-bak','tvbox','nav','tv'],
+    '🧰 Api': ['hot-api','twikoo-api','nca-api','nca-lam-api','nca-foc-api','meting-api','unm-server-api'],
+    '🪜 Proxy': ['sub','bpb','epe','edt','cfnat','yg','3K','hq'],
   },
 }
 
@@ -131,14 +134,36 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'memos',
+      name: 'Memos',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://memos.xons.me/',
+      tooltip: 'My memos server status',
+      statusPageLink: 'https://memos.xons.me/',
+      timeout: 10000,
+    },
+    {
+      id: 'hot',
+      name: 'Hot',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://hot.xons.me/',
+      tooltip: 'My news server status',
+      statusPageLink: 'https://hot.xons.me/',
+      timeout: 10000,
+    },
+    {
       id: 'docker-img',
       name: 'DockerHub',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://docker.xon.dedyn.io/',
+      target: 'https://docker.xons.zabc.net/',
       tooltip: 'My dockerhub server monitor',
-      statusPageLink: 'https://docker.xon.dedyn.io/',
+      statusPageLink: 'https://docker.xons.zabc.net/',
       timeout: 10000,
     },
     {
@@ -147,9 +172,9 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://ghp.xons.me/',
+      target: 'https://ghp.xon.hidns.vip/',
       tooltip: 'My ghproxy server monitor',
-      statusPageLink: 'https://ghp.xons.me/',
+      statusPageLink: 'https://ghp.xon.hidns.vip/',
       timeout: 10000,
 
     },
@@ -220,6 +245,17 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'sp',
+      name: 'Splayer',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://sp.xons.me/',
+      tooltip: 'My music server monitor',
+      statusPageLink: 'https://sp.xons.me/',
+      timeout: 10000,
+    },
+    {
       id: 'tvbox',
       name: 'TVBox',
       // `method` should be `TCP_PING` for tcp monitors
@@ -231,14 +267,58 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'libre',
-      name: 'Libre TV',
+      id: 'nav',
+      name: 'Nav',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://libre.xons.me/',
+      target: 'https://xon.ip-ddns.com/',
+      tooltip: 'My tv server monitor',
+      statusPageLink: 'https://xon.ip-ddns.com/',
+      timeout: 10000,
+    },
+    {
+      id: 'tv',
+      name: 'TV-ls',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xuanzi.ggff.net/',
+      tooltip: 'My tv server monitor',
+      statusPageLink: 'https://xuanzi.ggff.net/',
+      timeout: 10000,
+    },
+    {
+      id: 'libre',
+      name: 'Libre-TV',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://libre.xon.hidns.vip/',
       tooltip: 'My libre server monitor',
-      statusPageLink: 'https://libre.xons.me/',
+      statusPageLink: 'https://libre.xon.hidns.vip/',
+      timeout: 10000,
+    },
+    {
+      id: 'libre-cf',
+      name: 'Libre-CF',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://libre.xon.xx.kg/',
+      tooltip: 'My libre server monitor',
+      statusPageLink: 'https://libre.xon.xx.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'libre-bak',
+      name: 'Libre-Bak',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://libre.xon.qzz.io/',
+      tooltip: 'My libre server monitor',
+      statusPageLink: 'https://libre.xon.qzz.io/',
       timeout: 10000,
     },
     {
@@ -337,7 +417,7 @@ const workerConfig: WorkerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'https://sub.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
-      statusPageLink: 'https://epe.xylon.us.kg/',
+      statusPageLink: 'https:/sub.xna.dpdns.org/',
       timeout: 10000,
     },
     {
@@ -384,6 +464,95 @@ const workerConfig: WorkerConfig = {
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
     },
+    {
+      id: 'hot-api',
+      name: 'Hot-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://api.xons.me/',
+      tooltip: 'My hot-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'twikoo-api',
+      name: 'Twikoo-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://twikoo.xons.me/',
+      tooltip: 'My twikoo-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    // {
+    //   id: 'apprise-server-api',
+    //   name: 'Apprise-Server-Api',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'GET',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: 'https://apprisevercel-fawn.vercel.app/',
+    //   tooltip: 'My apprise-server server monitor',
+    //   // statusPageLink: 'https://epe.xylon.us.kg/',
+    //   timeout: 10000,
+    // },
+    {
+      id: 'nca-api',
+      name: 'Nca-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://cloudapi.xons.me/',
+      tooltip: 'My nca-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'nca-lam-api',
+      name: 'Nca-Lam-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://netease.xons.me/',
+      tooltip: 'My nca-lam-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'nca-foc-api',
+      name: 'Nca-Foc-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://lapi.xons.me/',
+      tooltip: 'My nca-foc-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'meting-api',
+      name: 'Meting-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://metingapi.zone.id/',
+      tooltip: 'My meting-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    {
+      id: 'unm-server-api',
+      name: 'Unm-Server-Api',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://unm.xons.me/',
+      tooltip: 'My unm-server-api server monitor',
+      // statusPageLink: 'https://epe.xylon.us.kg/',
+      timeout: 10000,
+    },
+    
   ],
   notification: {
     // [Optional] apprise API server URL
