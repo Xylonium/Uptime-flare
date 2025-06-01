@@ -14,9 +14,9 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '🌐 Public': ['home','homepage','cloudflare-blog','vercel-blog','netlify-blog'],
-    '🔐 Private': ['lobechat','nextchat','cloud','img','image','memos','note','github-proxy','docker-img','pintree','hot','about'],
+    '🔐 Private': ['lobechat','nextchat','cloud','img','image','memos','note','github-proxy','docker-img','pintree','news','about'],
     '🎞️ Media': ['music','sp','libre','libre-cf','libre-bak','tvbox','nav','tv'],
-    '🧰 Api': ['hot-api','twikoo-api','nca-api','nca-lam-api','nca-foc-api','meting-api','unm-server-api'],
+    '🧰 Api': ['twikoo-api','nca-api','nca-lam-api','nca-foc-api','meting-api','unm-server-api'],
     '🪜 Proxy': ['sub','bpb','epe','edt','cfnat','yg','3K','hq'],
   },
 }
@@ -145,14 +145,14 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'hot',
-      name: 'Hot',
+      id: 'news',
+      name: 'News',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://hot.xons.me/',
+      target: 'https://news.xons.me/',
       tooltip: 'My news server status',
-      statusPageLink: 'https://hot.xons.me/',
+      statusPageLink: 'https://news.xons.me/',
       timeout: 10000,
     },
     {
@@ -334,7 +334,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'image',
-      name: 'Image',
+      name: 'ImgBed-R2',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -389,7 +389,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'epe',
-      name: 'epe',
+      name: 'Epe-t',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -400,7 +400,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'edt',
-      name: 'edt',
+      name: 'Edt-v',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
@@ -465,17 +465,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'hot-api',
-      name: 'Hot-Api',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://api.xons.me/',
-      tooltip: 'My hot-api server monitor',
-      // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
-    },
-    {
       id: 'twikoo-api',
       name: 'Twikoo-Api',
       // `method` should be `TCP_PING` for tcp monitors
@@ -503,7 +492,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://cloudapi.xons.me/',
+      target: 'https://nca.xons.me/',
       tooltip: 'My nca-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -514,7 +503,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://netease.xons.me/',
+      target: 'https://nca-lam.xons.me/',
       tooltip: 'My nca-lam-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
@@ -525,7 +514,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://lapi.xons.me/',
+      target: 'https://nca-foc.xons.me/',
       tooltip: 'My nca-foc-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
       timeout: 10000,
