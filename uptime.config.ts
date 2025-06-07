@@ -14,10 +14,10 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '🌐 Public': ['home','homepage','cloudflare-blog','vercel-blog','netlify-blog'],
-    '🔐 Private': ['lobechat','nextchat','cloud','img','image','memos','note','github-proxy','docker-img','pintree','news','about'],
+    '🔐 Private': ['lobechat','nextchat','cloud','img','image','memos','note','github-proxy','docker-img','hf-gb','hf-hd','hf-oi','hf-ql','hf-hm','pintree','news','about'],
     '🎞️ Media': ['music','sp','libre','libre-cf','libre-bak','tvbox','nav','tv'],
     '🧰 Api': ['twikoo-api','nca-api','nca-lam-api','nca-foc-api','meting-api','unm-server-api'],
-    '🪜 Proxy': ['sub','bpb','epe','edt','cfnat','yg','3K','hq'],
+    '🪜 Proxy': ['sub','bpb-n','bpb-o','epe','edt','cfnat','yg','3K','hq'],
   },
 }
 
@@ -46,8 +46,8 @@ const workerConfig: WorkerConfig = {
     //   hideLatencyChart: false,
     //   // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
     //   expectedCodes: [200],
-    //   // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-    //   timeout: 10000,
+    //   // [OPTIONAL] `timeout` in millisecond, if not specified, default to 600000
+    //   timeout: 600000,
     //   // [OPTIONAL] headers to be sent
     //   headers: {
     //     'User-Agent': 'Uptimeflare',
@@ -76,7 +76,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://xons.me/',
       tooltip: 'My home server monitor',
       statusPageLink: 'https://xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'homepage',
@@ -87,7 +87,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://home.xons.me/',
       tooltip: 'My homepage server monitor',
       statusPageLink: 'https://home.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'cloudflare-blog',
@@ -98,7 +98,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://blog.xons.me/',
       tooltip: 'My blog server monitor',
       statusPageLink: 'https://blog.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'vercel-blog',
@@ -109,7 +109,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://vercel.xons.me/',
       tooltip: 'My blog server monitor',
       statusPageLink: 'https://vercel.xons.me',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'netlify-blog',
@@ -120,7 +120,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://netlify.xons.me/',
       tooltip: 'My blog server monitor',
       statusPageLink: 'https://netlify.xons.me',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'pintree',
@@ -131,7 +131,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://pintree.xons.me/',
       tooltip: 'My bookmark server status',
       statusPageLink: 'https://pintree.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'memos',
@@ -142,7 +142,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://memos.xons.me/',
       tooltip: 'My memos server status',
       statusPageLink: 'https://memos.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'news',
@@ -153,7 +153,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://news.xons.me/',
       tooltip: 'My news server status',
       statusPageLink: 'https://news.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'docker-img',
@@ -161,10 +161,10 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://docker.xons.zabc.net/',
+      target: 'https://dh.xon.dedyn.io/',
       tooltip: 'My dockerhub server monitor',
-      statusPageLink: 'https://docker.xons.zabc.net/',
-      timeout: 10000,
+      statusPageLink: 'https://dh.xon.dedyn.io/',
+      timeout: 600000,
     },
     {
       id: 'github-proxy',
@@ -175,7 +175,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://ghp.xon.hidns.vip/',
       tooltip: 'My ghproxy server monitor',
       statusPageLink: 'https://ghp.xon.hidns.vip/',
-      timeout: 10000,
+      timeout: 600000,
 
     },
     {
@@ -187,7 +187,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://pan.xons.dpdns.org/',
       tooltip: 'My cloud server monitor',
       statusPageLink: 'https://pan.xons.dpdns.org/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'note',
@@ -198,7 +198,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://note.xons.me/',
       tooltip: 'My enclosed server monitor',
       statusPageLink: 'https://note.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     // {
     //   id: 'webssh',
@@ -209,7 +209,7 @@ const workerConfig: WorkerConfig = {
     //   target: 'https://ssh.xons.dpdns.org/',
     //   tooltip: 'My webssh server monitor',
     //   statusPageLink: 'https://ssh.xons.dpdns.org/',
-    //   timeout: 10000,
+    //   timeout: 600000,
     // },
     {
       id: 'lobechat',
@@ -220,7 +220,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://lobe.xons.me/',
       tooltip: 'My gemini server monitor',
       statusPageLink: 'https://lobe.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'nextchat',
@@ -231,7 +231,62 @@ const workerConfig: WorkerConfig = {
       target: 'https://gpt.xons.me/',
       tooltip: 'My gpt server monitor',
       statusPageLink: 'https://gpt.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
+    },
+    {
+      id: 'hf-gb',
+      name: 'Gmini-Balance',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xylonstar-gb.hf.space',
+      tooltip: 'My hugging-face server monitor',
+      statusPageLink: 'https://xylonstar-gb.hf.space/',
+      timeout: 43200000,
+    },
+    {
+      id: 'hf-hd',
+      name: 'HF-Deploy',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xylonstar-hfdeploy.hf.space/',
+      tooltip: 'My hugging-face server monitor',
+      statusPageLink: 'https://xylonstar-hfdeploy.hf.space/',
+      timeout: 43200000,
+    },
+    {
+      id: 'hf-oi',
+      name: 'OpenWebUI',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xylonstar-openweb.hf.space',
+      tooltip: 'My hugging-face server monitor',
+      statusPageLink: 'https://xylonstar-openweb.hf.space/',
+      timeout: 43200000,
+    },
+    {
+      id: 'hf-ql',
+      name: 'QL-Panel',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xylonstar-ql-panel.hf.space',
+      tooltip: 'My hugging-face server monitor',
+      statusPageLink: 'https://xylonstar-ql-panel.hf.space/',
+      timeout: 43200000,
+    },
+    {
+      id: 'hf-hm',
+      name: 'HF-Manager',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://xylonstar-hf-manager.hf.space',
+      tooltip: 'My hugging-face server monitor',
+      statusPageLink: 'https://xylonstar-hf-manager.hf.space/',
+      timeout: 43200000,
     },
     {
       id: 'music',
@@ -242,7 +297,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://music.xons.me/',
       tooltip: 'My music server monitor',
       statusPageLink: 'https://music.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'sp',
@@ -253,7 +308,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://sp.xons.me/',
       tooltip: 'My music server monitor',
       statusPageLink: 'https://sp.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'tvbox',
@@ -264,7 +319,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://tvbox.xons.me/',
       tooltip: 'My tv server monitor',
       statusPageLink: 'https://tvbox.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'nav',
@@ -275,7 +330,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://xon.ip-ddns.com/',
       tooltip: 'My tv server monitor',
       statusPageLink: 'https://xon.ip-ddns.com/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'tv',
@@ -286,7 +341,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://xuanzi.ggff.net/',
       tooltip: 'My tv server monitor',
       statusPageLink: 'https://xuanzi.ggff.net/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'libre',
@@ -297,7 +352,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://libre.xon.hidns.vip/',
       tooltip: 'My libre server monitor',
       statusPageLink: 'https://libre.xon.hidns.vip/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'libre-cf',
@@ -308,7 +363,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://libre.xon.xx.kg/',
       tooltip: 'My libre server monitor',
       statusPageLink: 'https://libre.xon.xx.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'libre-bak',
@@ -319,7 +374,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://libre.xon.qzz.io/',
       tooltip: 'My libre server monitor',
       statusPageLink: 'https://libre.xon.qzz.io/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'img',
@@ -330,7 +385,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://img.xons.me',
       tooltip: 'My img server monitor',
       statusPageLink: 'https://img.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'image',
@@ -338,10 +393,10 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://img.xylonstar.ggff.net/',
+      target: 'https://hub.xon.qzz.io/',
       tooltip: 'My img server monitor',
-      statusPageLink: 'https://img.xylonstar.ggff.net/',
-      timeout: 10000,
+      statusPageLink: 'https://hub.xon.qzz.io/',
+      timeout: 600000,
     },
     // {
     //   id: 'im',
@@ -352,7 +407,7 @@ const workerConfig: WorkerConfig = {
     //   target: 'https://im.xylonstar.ggff.net/',
     //   tooltip: 'My im server monitor',
     //   statusPageLink: 'https://im.xylonstar.ggff.net/',
-    //   timeout: 10000,
+    //   timeout: 600000,
     // },
     // {
     //   id: 'br',
@@ -363,7 +418,7 @@ const workerConfig: WorkerConfig = {
     //   target: 'https://br.xons.dpdns.org/',
     //   tooltip: 'My br server monitor',
     //   statusPageLink: 'https://br.xons.dpdns.org/',
-    //   timeout: 10000,
+    //   timeout: 600000,
     // },
     {
       id: 'about',
@@ -374,18 +429,29 @@ const workerConfig: WorkerConfig = {
       target: 'https://about.xons.me/',
       tooltip: 'My about server monitor',
       statusPageLink: 'https://about.xons.me/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
-      id: 'bpb',
-      name: 'Bpb',
+      id: 'bpb-n',
+      name: 'Bpb-new',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://hans.xna.dpdns.org/',
       tooltip: 'My bpbpanel server monitor',
       statusPageLink: 'https://hans.xna.dpdns.org/',
-      timeout: 10000,
+      timeout: 600000,
+    },
+    {
+      id: 'bpb-o',
+      name: 'Bpb-old',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://bia.xna.dpdns.org/',
+      tooltip: 'My bpbpanel server monitor',
+      statusPageLink: 'https://bia.xna.dpdns.org/',
+      timeout: 600000,
     },
     {
       id: 'epe',
@@ -396,7 +462,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://ct.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'edt',
@@ -407,7 +473,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://cv.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://edt.xylonify.us.kg//',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'sub',
@@ -418,7 +484,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://sub.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       statusPageLink: 'https:/sub.xna.dpdns.org/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'cfnat',
@@ -429,7 +495,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://cfnat.xna.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'yg',
@@ -440,7 +506,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://brave.xnstar.dpdns.org/',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: '3K',
@@ -451,7 +517,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://3k.xnstar.dpdns.org',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'hq',
@@ -462,7 +528,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://hqz.xna.dpdns.org',
       tooltip: 'My proxy server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'twikoo-api',
@@ -473,7 +539,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://twikoo.xons.me/',
       tooltip: 'My twikoo-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     // {
     //   id: 'apprise-server-api',
@@ -484,7 +550,7 @@ const workerConfig: WorkerConfig = {
     //   target: 'https://apprisevercel-fawn.vercel.app/',
     //   tooltip: 'My apprise-server server monitor',
     //   // statusPageLink: 'https://epe.xylon.us.kg/',
-    //   timeout: 10000,
+    //   timeout: 600000,
     // },
     {
       id: 'nca-api',
@@ -495,7 +561,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://nca.xons.me/',
       tooltip: 'My nca-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'nca-lam-api',
@@ -506,7 +572,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://nca-lam.xons.me/',
       tooltip: 'My nca-lam-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'nca-foc-api',
@@ -517,7 +583,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://nca-foc.xons.me/',
       tooltip: 'My nca-foc-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'meting-api',
@@ -528,7 +594,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://metingapi.zone.id/',
       tooltip: 'My meting-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     {
       id: 'unm-server-api',
@@ -539,7 +605,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://unm.xons.me/',
       tooltip: 'My unm-server-api server monitor',
       // statusPageLink: 'https://epe.xylon.us.kg/',
-      timeout: 10000,
+      timeout: 600000,
     },
     
   ],
